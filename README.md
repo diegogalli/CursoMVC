@@ -43,3 +43,19 @@ Nessa estratégia o Entity Framework somente cria o banco de dados se ele não e
 Nesse modelo o Entity Framework apaga o banco de dados e o recria sempre que o projeto é executado, fazendo com que você perca todos os seus dados ao inicia-lo.
 ## DropCreateDatabaseIfModelChanges
 Nessa estratégia o Entity Framework apaga o seu banco de dados e o cria sempre que identificar uma alteração no seu modelo de classes, isso também faz com que você perca todos os seus dados, porém apenas quando você realizar a alteração do seu modelo.
+
+# O que é API?
+
+A sigla API em português significa "interface de programação de aplicações".
+As APIs são uma forma de realizar a integração entre sistemas, mesmo que esses possuam linguagens de programação diferentes.
+Um exemplo de API é o Google Maps que é utilizado por empresas de Hotel em que é disponibilizada dentro do site da a empresa a localização em que ele fica.
+
+# O que é REST?
+
+O REST é um conjunto de princípios que quando aplicados de maneira correta em uma aplicação, a beneficia com a arquitetura e padrões da pŕopria web.
+Uma aplicação que é capaz de aplicar tais principios é chamada de RESTful.
+
+# Swagger
+
+Quando é preciso consumir uma API existente é necessário conhecer as funcionalidades disponíveis e detalhes de como consumir tal funcionalidade.
+Diante dessa necessidade, existe o Swagger que é um projeto composto por algumas ferramentas para auxiliar o desenvolvimento de API em algumas tarefas, como por exemplo a documentação da API.
