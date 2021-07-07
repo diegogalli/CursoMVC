@@ -41,5 +41,5 @@ Antes do Entity Framework contar com suporte ao Migrations, existia apenas três
 Nessa estratégia o Entity Framework somente cria o banco de dados se ele não existir, ou seja, se você estiver utilizando essa estratégia e realizar uma alteração no seu modelo de classes, você teria que remover o seu banco de dados e cria-lo novamente, perdendo, assim, todos os seus dados.
 ## DropCreateDatabaseAlways
 Nesse modelo o Entity Framework apaga o banco de dados e o recria sempre que o projeto é executado, fazendo com que você perca todos os seus dados ao inicia-lo.
-## DropaCreateDatabaseIfModelChanges
+## DropCreateDatabaseIfModelChanges
 Nessa estratégia o Entity Framework apaga o seu banco de dados e o cria sempre que identificar uma alteração no seu modelo de classes, isso também faz com que você perca todos os seus dados, porém apenas quando você realizar a alteração do seu modelo.
