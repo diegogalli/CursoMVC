@@ -29,3 +29,17 @@ O Data Annotations é um recurso que permite que você adicione atributos e mét
   - **MinLength:** Determina a quantidade mínima de caracteres que poderá ser informado.
   - **DisplayFormat:** Formato a ser exibido nas interfaces de usuário.
   - **Range:** Define a faixa de dados aceita pela propriedade.
+
+# Migrations
+O Migrations é um recurso que oferece uma maneira de atualizar de forma incremental o esquema de banco de dados para manter em sincronia com o modelo de classe do seu projeto, preservando os dados existentes no banco de dados.
+Com o Migrations também é possível realizar o downgrade caso você deseje voltar o seu banco de dados para a versão anterior em que se encontrava, além de manter um historico de alterações.
+Antes do Entity Framework contar com suporte ao Migrations, existia apenas três estratégias para a criação de banco de dados, quais sejam:
+  - CreateDatabaseIfNotExists
+  - DropCreateDatabaseAlways
+  - DropCreateDatabaseIfModelChanges
+## CreateDatabaseIfNotExists
+Nessa estratégia o Entity Framework somente cria o banco de dados se ele não existir, ou seja, se você estiver utilizando essa estratégia e realizar uma alteração no seu modelo de classes, você teria que remover o seu banco de dados e cria-lo novamente, perdendo, assim, todos os seus dados.
+## DropCreateDatabaseAlways
+Nesse modelo o Entity Framework apaga o banco de dados e o recria sempre que o projeto é executado, fazendo com que você perca todos os seus dados ao inicia-lo.
+## DropaCreateDatabaseIfModelChanges
+Nessa estratégia o Entity Framework apaga o seu banco de dados e o cria sempre que identificar uma alteração no seu modelo de classes, isso também faz com que você perca todos os seus dados, porém apenas quando você realizar a alteração do seu modelo.
